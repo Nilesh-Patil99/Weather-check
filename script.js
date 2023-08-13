@@ -37,7 +37,6 @@ data();
     
     if((allcity[i].toLowerCase()).indexOf((value.toLowerCase())) > -1){
       count++
-      console.log("allgood")
       let node = document.createElement("option");
       let val= document.createTextNode(allcity[i]);
       node.appendChild(val);
