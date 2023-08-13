@@ -1,0 +1,58 @@
+body{
+  background-color: #000;  
+  height: 100vh;
+  width: 100vw;
+}
+.canvas{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.searchbox{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+button{
+  background-color: 
+  #0074d9;
+  color: whitesmoke;
+}
+h1{
+  color: #55ad22;
+  text-align: center;
+}
+footer{
+  position: absolute;
+  bottom: 10px;
+
+  color: rgb(75, 211, 161);
+  
+}
+
+.result{
+  font-family: 'Comic Neue';
+font-family: 'Libre Baskerville', serif;
+border: 3px solid #46c1a4;
+  margin-top: 100px;
+  color: white;
+  padding: 20px;
+}
+.autocomplete{
+  position: relative;
+  display: inline-block;
+}
+
+@media (width<600px){
+input{
+  height: 25px;
+}
+button{
+  height: 30px;
+
+}
+}
