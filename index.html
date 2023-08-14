@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Libre+Baskerville&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="title"><h1>Find weather in your city</h1></div>
+      <div class="searchbox">
+        <input
+          class="inbox"
+          name="sub"
+          type="text"
+          list="datalist"
+          placeholder="City Name"
+          autofocus
+          onkeyup="suggest(this.value, event)"
+        />
+        <button name="sub" type="submit">
+          <img
+            width="10"
+            height="10"
+            src="https://img.icons8.com/officel/16/search--v1.png"
+            alt="search--v1"
+          />
+          SEARCH
+        </button>
+      </div>
+      <div class="suggestion"></div>
+      <datalist id="datalist"> </datalist>
+
+      <div class="border">
+        <div class="city"></div>
+        <div class="weather"></div>
+        <div class="temp"></div>
+        <div class="windspeed"></div>
+        <div class="windDire"></div>
+        <div class="pressure"></div>
+        <div class="humidity"></div>
+      </div>
+    </div>
+    <footer>Created by Nilesh Patil using openweather map api</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
